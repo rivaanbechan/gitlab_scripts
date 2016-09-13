@@ -2,7 +2,6 @@
 
 # usage:
 # edit your user. Go to Account. Use Private Token
-# ./create_repo.sh REPO_NAME
 # permissions private 0, internal 10, public 20. Default 0
 # Renames origin to gitlab
 
