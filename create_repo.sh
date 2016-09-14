@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # usage:
 # edit your user. Go to Account. Use Private Token
