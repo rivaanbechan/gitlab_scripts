@@ -13,9 +13,9 @@ user='gitlab user'
 # read user input
 read -p "Name:" repo
 read -p "description[optional]:" desc
-echo "\nprivate 0, internal 10, public 20. Default 0"
+echo """private 0, internal 10, public 20. Default 0"
 read -p "permissions[optional]:" permission
-echo "\n"
+echo ""
 
 # make api call
 req="$(curl -s -s -o /dev/null -w "%{http_code}" -H "Content-Type:application/json" http://$gitlab/api/v3/projects?private_token=$token -d "{ \"name\": \"$repo\", \"description\": \"$desc\", \"visibility_level\": \"$permission\" }")"
